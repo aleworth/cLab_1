@@ -1,1 +1,8 @@
 //For CSS stuff
+
+h1 {
+	font-family: 'Bilbo Swash Caps', cursive;
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+}
