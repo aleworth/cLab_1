@@ -1,0 +1,1 @@
+//This can be used separately for writing JS if you want.
