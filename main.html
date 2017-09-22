@@ -1,148 +1,8 @@
 <html>
 <head>
 <script>
-  var step = 0;
-  var onFail = function()
-  {
-     if(step == 0)
-     {
-     		document.getElementById("heading").innerHTML = "Looks like you won't be graduating...";
-		var image = document.getElementById("image");
-    image.src = "https://img.buzzfeed.com/buzzfeed-static/static/2014-06/2/18/enhanced/webdr03/anigif_enhanced-21378-1401748529-18.gif";  
-    document.getElementById("choice1").innerHTML = "You Lose!";
-    document.getElementById("choice2").innerHTML = "You Lose!";
-     }
-     else if(step == 1)
-     {
-       fail_one();
-     }
-     else if(step == 2)
-     {
-       fail_two();
-     }
-     else if(step == 3)
-     {
-      fail_three();
-     }
-     else if(step == 4)
-     {
-       fail_four();
-     }
-  }
-  
-  var fail_one = function()
-  {
-  document.getElementById("heading").innerHTML = "You clearly don't know yourself...You'll probably fail the class";
-    var image = document.getElementById("image");
-    image.src = "https://media.salon.com/2013/08/student_asleep.jpg";  
-    document.getElementById("choice1").innerHTML = "Sorry";
-    document.getElementById("choice2").innerHTML = "You lose!";
-  }
-  
-    var fail_two = function()
-  {
-  document.getElementById("heading").innerHTML = "Grave mistake, no one can walk on the grass! You get kicked out :/";
-    var image = document.getElementById("image");
-    image.src = "http://en.thegreatmiddleeast.com/wp-content/uploads/sites/2/2016/07/jail-arrested-arrest-prison311.jpg";  
-    document.getElementById("choice1").innerHTML = "Sorry";
-    document.getElementById("choice2").innerHTML = "You lose!";
-  }
-  
-  var fail_three = function()
-  {
-  document.getElementById("heading").innerHTML = "Joke's on you! You'll probably die waiting in line...";
-    var image = document.getElementById("image");
-    image.src = "http://universe.byu.edu/wp-content/uploads/2013/10/042209_TestCenterLine_03.jpg";  
-    document.getElementById("choice1").innerHTML = "Sorry";
-    document.getElementById("choice2").innerHTML = "You lose!";
-  }
-  
-   var fail_four = function()
-  {
-  document.getElementById("heading").innerHTML = "How do you expect to finish your labs without the TA??";
-    var image = document.getElementById("image");
-    image.src = "http://s2.quickmeme.com/img/d6/d6a1143f571184db25f94613edd43b40af6d3a629221aba00d9efdcfef5efd84.jpg";  
-    document.getElementById("choice1").innerHTML = "Sorry";
-    document.getElementById("choice2").innerHTML = "You lose!";
-  }
-  
-  
-  
-  var onSuccess = function()
-  {
-    if(step == 0)
-    {
-       onFirstStep();
-       step++;
-    }
-    else if(step == 1)
-    {
-    	onSecondStep();
-      step++;
-    }
-    else if(step == 2)
-    {
-      onThirdStep();
-      step++;
-    }
-    else if(step == 3)
-    {
-	    onFourthStep();
-	    step++;
-    }
-    else if(step == 4)
-    {
-      onFifthStep();
-      step++;
-		}
-  }
-  
-  var onFirstStep = function()
-  {
-    document.getElementById("heading").innerHTML = "Are you going to take 8 am classes?";
-    var image = document.getElementById("image");
-    image.src = "https://www.northwestu.edu/assets/images/admissions/blog/35jctj.jpg";
-    document.getElementById("choice1").innerHTML = "Never!";
-    document.getElementById("choice2").innerHTML = "Why not?"; 
-  }
-  
-  var onSecondStep = function()
-  {
-  	document.getElementById("heading").innerHTML = "Are you going to walk on the grass to get to class on time?";
-    var image = document.getElementById("image");
-    image.src = "http://3.bp.blogspot.com/-XxUxPmAXaEc/UnK2Bl6630I/AAAAAAAAAEo/ohgxskL9Yvs/s1600/grass.jpg";
-    document.getElementById("choice1").innerHTML = "I would never!";
-    document.getElementById("choice2").innerHTML = "Yeah, whatever..."; 
-  }
-  
-  var onThirdStep = function()
-  {
-    document.getElementById("heading").innerHTML = "Are you going to wait to take your test on the last day?";
-    var image = document.getElementById("image");
-    image.src = "https://onestop.byu.edu/sites/onestop.byu.edu/files/banner-46.jpg";
-    document.getElementById("choice1").innerHTML = "I would never!";
-    document.getElementById("choice2").innerHTML = "Yeah, whatever..."; 
-  }
-
-   var onFourthStep = function()
-  {
-    document.getElementById("heading").innerHTML = "Are you going to use the TA lab?";
-    var image = document.getElementById("image");
-    image.src = "http://www.cs.siu.edu/_common/images/feature/labs/lab_lindegren18.jpg";
-    document.getElementById("choice1").innerHTML = "The TAs? I love them!";
-    document.getElementById("choice2").innerHTML = "The what??"; 
-  }
-
-  var onFifthStep = function()
-  {
-    document.getElementById("heading").innerHTML = "Congratulations, you made it through! Go claim your prize :)";
-    var image = document.getElementById("image");
-    image.src = "https://media.giphy.com/media/gz5oKhml2Rmwg/giphy.gif";
-    document.getElementById("choice1").innerHTML = "Woot woot!";
-    document.getElementById("choice2").innerHTML = "Yaaaas!!"; 
-  }
 </script>
-
+    <link rel="stylesheet" type="text/css" href="sheets.css"></link>
 </head>
   <body>
    <br>
@@ -153,10 +13,7 @@
     <br><br><br>
     <div id="choices">
       <div class="mychoice">
-        <button id = "choice1" type="button" class="msgBtn" onClick=onSuccess() >Start!</button> 
-      </div>
-      <div class="mychoice">
-        <button id = "choice2" type="button" class="msgBtn" onClick=onFail()>Choice 2 </button> 
+        <button type="button" class="msgBtn" onClick="location.href='http://ec2-54-153-11-121.us-west-1.compute.amazonaws.com/cLab_1/body.html';">Start!</button> 
       </div>
     </div>
 	</body>
