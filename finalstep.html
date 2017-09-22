@@ -1,38 +1,12 @@
 <html>
 <head>
 <script>
-var celeb = new Audio('videoplayback.mp4');
-var party = function() {
-	var check = awesome();
-}
+var celeb = new Audio('bestdayever.m4a');
 var awesome = function()
   {
 	celeb.play();
-	var counter = 1;
-	if (counter == 1) {
-	counter++;
 	var image = document.getElementById("image");
     image.src = "https://media.giphy.com/media/l3q2Z6S6n38zjPswo/giphy.gif";
-	return counter;
-	}
-	else if (counter == 2) {
-	counter++;
-	var image = document.getElementById("image");
-    image.src = "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif";
-	return counter;
-	}
-	else if (counter == 3) {
-	counter++;
-	var image = document.getElementById("image");
-    image.src = "https://media.giphy.com/media/6nuiJjOOQBBn2/giphy.gif";
-	return counter;
-	}
-	else if (counter == 4) {
-	counter = 1;
-	var image = document.getElementById("image");
-    image.src = "https://media.giphy.com/media/HqJmOe2M1Af9C/giphy.gif";
-	return counter;
-	}
 	
   }
 </script>
@@ -47,7 +21,7 @@ var awesome = function()
     <br><br><br>
     <div id="choices">
       <div class="mychoice">
-        <button id = "choice1" type="button" class="msgBtn" onClick=party()>Celebrate!!</button> 
+        <button id = "choice1" type="button" class="msgBtn" onClick=awesome()>Celebrate!!</button> 
       	<h1 id = "heading">YOU DID IT!</h1>
       </div>
     </div>
